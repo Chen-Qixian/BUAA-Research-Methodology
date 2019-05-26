@@ -1,0 +1,48 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+
+\bibitem{DataClassify}
+基于多任务学习的多源数据分类研究. 计算机应用研究
+  35(11),  34--37 (2018)
+
+\bibitem{HeJiexin}
+何洁昕: 基于 GIS 的商业选址系统的设计与实现. Master's thesis,
+  河北科技大学 (2018)
+
+\bibitem{ZhouLiuCai}
+周晓东, 刘娜, 蔡文: 基于 qfd 的商业银行网点选址应用研究.
+  经营管理者  4,  2--3 (2015)
+
+\bibitem{chainDev}
+安芸睿, et~al.: 中国城市中外国连锁店的发展探析. 山西建筑
+  (2018 年 20),  23--25 (2018)
+
+\bibitem{LBSN}
+屈弘扬, 於志文, 田苗, 郭斌: 基于 lbsn
+  的商业选址推荐系统的研究与实现. 计算机科学  42(9),
+  33--36 (2015)
+
+\bibitem{cityLevel}
+王晓梦, 王锦, 朱青:
+  基于签到数据的城市商业空间空心化识别研究——以北京市城六区为例.
+  城市发展研究  25(2) (2018)
+
+\bibitem{DongHongAn}
+董鸿安, 丁镭, 林远贵: 基于sems的本土咖啡连锁店
+  体验营销策略研究. 商业经济 (4),  79--82 (2018)
+
+\bibitem{mallLevel}
+薛冰, 肖骁, 李京忠, 姜璐, 谢潇:
+  基于poi大数据的城市零售业空间热点分析——以辽宁省沈阳市为例.
+  经济地理  38(5),  36--43 (2018)
+
+\bibitem{ZhaoQiLu}
+赵其鲁, 李宗民: 基于深度多任务学习的层次分类.
+  计算机辅助设计与图形学学报  30(5),  886--892 (2018)
+
+\bibitem{DengYue}
+邓悦: 基于多源兴趣点数据的城市功能区划分方法研究.
+  Master's thesis, 中国测绘科学研究院 (2018)
+
+\end{thebibliography}
