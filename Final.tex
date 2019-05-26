@@ -1,5 +1,7 @@
-\documentclass[UTF8]{llncs}
+\documentclass{llncs}
 %
+%-- coding: UTF-8 --
+\usepackage[UTF8]{ctex}
 \usepackage{amsfonts}
 \usepackage{amstext}
 \usepackage{amsmath}
@@ -17,8 +19,7 @@
 \usepackage{url}
 \usepackage{cite}
 \usepackage{color}
-%-- coding: UTF-8 --
-\usepackage[UTF8]{ctex}
+
 \usepackage{makecell}
 %
 \begin{document}
@@ -64,7 +65,7 @@
 
 \section{研究现状}
 \subsection{商业选址的研究方法}
-在商业选址方面，既有的研究成果主要利用了丰富的地理信息和社交媒体数据，对商业选址成功率给出具体预测结果。由于智能手机逐渐被大多数人使用，和GPS、北斗导航定位技术的普及，商业选址的数据来源也得到了极大的丰富。
+在商业选址方面，既有的研究成果主要利用了丰富的地理信息和社交媒体数据，对商业选址成功率给出具体预测结果。由于智能手机逐渐被大多数人使用，和GPS、北斗导航定位技术的普及，商业选址的数据来源也得到了极大的丰富~\cite{zhao2017mining}。
 
 在一些文献中，作者通过对商店地理位置数据，使用一种基于位置的社交网络，成功地预测了商店每日顾客到达数~\cite{LBSN}；此外，有的学者提出了一种根据连锁店规模大小而进行的选址推荐框架，并给出正确引入这种经营模式的可行方案~\cite{chainDev}；也有研究人员通过百度地图的数据信息，对消费者需求和行为进行分析，给出最优化的选址方案~\cite{DengYue}；还有一些研究人员，将商业选址问题与时下快速发展的全球地理信息系统GIS相结合，生成选址的推荐方案~\cite{HeJiexin}。
 
@@ -72,7 +73,7 @@
 	\centering
 	\caption{商业选址推荐方法}
 	\label{tb:reco-method}
-	\begin{tabular}{ccll}
+	\begin{tabular}{cc|c|c}
 		\hline
 		& \textbf{方法名称}  & \textbf{数据来源} & \textbf{方法核心}  \\ \hline
 		& LBSN选址 & 手机定位信息  & 利用用户使用移动手机产生的地理信息数据进行推荐       \\ %\hline
@@ -103,15 +104,16 @@
 
 \section{多任务学习模型核心理论}
 \subsection{特征提取}
-有关商业选址评判的特征提取的理论研究有很多，从大量文献记述中可以总结为从城市维度、商业区维度、商场维度三个层次，来展开的特征提取。在城市维度，现有方法中主要考虑了商场所处的商业区的等级以及功能特性~\cite{cityLevel}。在商业区维度上，则更多地考虑了商业区的商场密度、商业区对顾客的吸引力、商业区内同类型商店所带来的竞争指数以及人流量(通过计算出租车、地铁等dropoff数据来估计)~\cite{mallLevel} 。在最内部的商场维度上，有的研究人员则是从大众点评数据上提取了人均消费、商场大小、促销情况、商场品牌质量（口碑评分）等多种维度的特征。将提取的多维度、多种类的特征作为模型的输入进行训练。
+有关商业选址评判的特征提取的理论研究有很多，从大量文献记述中可以总结为从城市维度、商业区维度、商场维度三个层次，来展开的特征提取。在城市维度，现有方法中主要考虑了商场所处的商业区的等级以及功能特性~\cite{cityLevel}。在商业区维度上，则更多地考虑了商业区的商场密度、商业区对顾客的吸引力、商业区内同类型商店所带来的竞争指数以及人流量(通过计算出租车、地铁等dropoff数据来估计)~\cite{traffic}。在最内部的商场维度上，有的研究人员则是从大众点评数据上提取了人均消费、商场大小、促销情况、商场品牌质量（口碑评分）等多种维度的特征~\cite{mallLevel}。将提取的多维度、多种类的特征作为模型的输入进行训练。
 
-此外，还有学者建议将上述指标整合成内部特征与外部特征两类指标进行评价。所谓内部特征，就是指商圈内部对消费者的作用与影响的特征，包括商圈POI数目、商场竞争性与互补性特征等等。而外部特征，则是指商业区周边的环境信息，包括商场周边的人流量数据、交通流量数据以及消费行为分析数据等等，一些典型的特征提取的分类可以用表\ref{feature}所示。
+此外，还有学者建议将上述指标整合成内部特征与外部特征两类指标进行评价。~\cite{IEfeatures}所谓内部特征，就是指商圈内部对消费者的作用与影响的特征，包括商圈POI数目、商场竞争性与互补性特征等等。而外部特征，则是指商业区周边的环境信息，包括商场周边的人流量数据、交通流量数据以及消费行为分析数据等等，一些典型的特征提取的分类可以用表\ref{feature}所示。
 
 \begin{table}
 	\centering
 	\caption{Mood quadrants and their corresponding number of songs}
 	\label{feature}
 	\begin{tabular}{c|p{8cm}<{\centering}}
+	% \begin{tabular}{c|p{8cm}}
 		\hline
 		\textbf{种类}  & \multicolumn{1}{c}{\textbf{特征实例}}         \\ \hline
 		\multirow{6}{*}{内部特征举例} & 店铺平均消费水平 \\ \cline{2-2} 
@@ -129,21 +131,39 @@
 	\end{tabular}
 \end{table}
 
+\subsection{多任务学习模型}
+传统的多任务学习模型主要由4部分组成，包括特征编码层、任务层、关联表征的多任务层和预测层这四个部分~\cite{Caruana1997Multitask}~\cite{Caruana2012A}，我们可以从图\ref{MTLmodel}中看出一种深度多任务学习模型的典型架构图。我们将上一步提取出来的多维度多种类的特征首先需要送入编码层进行编码，对不同类型以及维度的输入特征向量进行线性变换后再通过Relu层，然后送入任务层进行交叉学习，最后通过预测层进行最终的结果预测~\cite{zheng2014urban}。
+\subsubsection{特征编码层}
+在这一层中，主要完成对各目标商业区提供的源数据呈现共享表征进行提取，并形成特征向量编码，供下一层的使用~\cite{mariani2018business}。在本层所形成的编码可以表示成如下形式。对于由$n$个连锁店组成的集合$\mathbf{S}$中的每一家连锁店$\mathbf{s_i} \in \mathbf{S}$而言，其内部特征可以表示为
+$$\mathbf{x}_i^I = [x_{i,1}^I,x_{i,2}^I,x_{i,3}^I,...,x_{i,D^I}^I]^\mathsf{T} \in R^{D^I}$$
+而外部特征则可以用
+$$X_i^E = [x_{i,1}^E,x_{i,2}^E,x_{i,3}^E,...,x_{i,D^E}^E]^\mathsf{T} \in R^{D^E}$$
+来进行表示~\cite{Wang2018Searchable}。因此，特征编码层的特征向量可以写作
+$$\mathbf{x}_i = [\mathbf{x}_i^I;\mathbf{x}_i^E] \in \mathbf{R} ^ D$$
+其中$D$表示内部与外部的特征空间$D = D^I + D^E$。
+\subsubsection{任务层}
+在与任务层相关的研究中，一些研究人员将特征编码层得到的进行编码后特征记为$h_{ENC}$，用公式\ref{taskLayer}描述特定任务层的数学模型
+\begin{equation}
+	\label{taskLayer}
+	c^k=ReLU(W_{TS}^kh_{ENC}+b_{TS}^k)
+\end{equation}
+其中$b_{TS}^k$是偏置层$(bias)$,$c^k$是将原来的多维多种类特征进行进一步提取得到的降维后任务$k$的新特征~\cite{Held2017Analyzing}。
+\subsubsection{关联表征的多任务层}
+为了得到不同任务之间的关系，Wang等人的研究工作是在任务层之上引入了一个关系矩阵$R$来表示一个新的关联表征多任务层~\cite{wang2016place}。上层输出的$c^k$ 是第$k$个任务的特征，我们定义在交叉学习$k$个任务之后得到的新的隐藏层特征$\alpha^1,\alpha^2,\alpha^3,\cdots,\alpha^k$的数学模型如下
+$$\begin{bmatrix}\alpha^1\\\vdots\\\alpha^k\end{bmatrix}=\begin{bmatrix}R_{11}&\cdots&R_{1K}\\\vdots&\ddots&\vdots\\R_{K1}&\cdots&R_{KK}\end{bmatrix}\cdot\begin{bmatrix}c^1\\\vdots\\c^k\end{bmatrix}$$
+在该层的最后，Xu等人通过采用池化（MaxPooling）操作和sigmoid函数操作，将多个任务之间重要的信息特征再次提取出来，得到新的特征$\widetilde c^1\cdots\widetilde c^k$~\cite{xu2016demand}。
+\subsubsection{预测层}
+预测层是整个多任务学习模型的顶层输出，也是多任务学习的推荐目标。预测层的核心是一个线性变换层，输出$y^k$为相应的预测结果~\cite{Long2017Learning}。
+$$y^k=w^k\widetilde c^k+b^k$$
+\subsubsection{损失函数}
+为了评估模型的预测效果，并对模型进行调整与优化，有必要引入一个合适的损失函数。Jing等人在其相关研究中，考虑使用最小平方损失(least-square loss function)作为多任务学习模型的损失函数进行评估~\cite{Jing2016Where}，针对这一类选址问题，这个损失函数可以用公式\ref{loss}表示
+\begin{equation}
+	\label{loss}
+	Loss=\sum_{i=1}^k\sum_{k=1}^K\left\|y_{i_{real}}^k-\;y_i^k\right\|^2\;+\;\mu\;\left\|w\right\|_F^2\;+\;\beta\left\|R\right\|_F^2\;+\;Loss_{ENC}
+\end{equation}
+损失函数由预测值和真实值的$L2$范数、任务层的参数$W$、多任务之间的关系矩阵$R$以及编码过程产生的Loss这4部分组成。在Niu等人的书籍文献中，提到了使用Vizier去寻找最优参数的方法，优化过程使用加速梯度下降方法AGM(accelerate gradient method)，也都产生了比较好的预测效果~\cite{Niu2016Exploiting}。
 
 
-
-
-
-
-
-
-
-
-
-
-
-\subsection{案例代表}
-首先我们选取了两家连锁店作为考察对象，分别是“味多美”(食品连锁店)和“VEROMODA”(服饰连锁品牌)，以及五个不包含这两家店铺的商圈。根据预测结果可以获得包括但不限于以下信息：“味多美”选择在鼓楼进行投资更有可能吸引到更大的客流量，“VEROMODA”选择在SKP投资则更有可能有助于提高其顾客的质量评分等等。
 \subsection{实验结果}
 其次，我们可以用这些商场的内部特征与外部特征信息，对上述预测结果进行更深入的理解。通过出租车接送客数据信息，与公共交通自助交易信息可知，鼓楼附近的交通情况十分便捷。此外，同类型的店铺数量较少，结合上述两点分析，可以带来较多的客流量。但由于缺乏竞争，就可能导致该店铺的经营与管理不利，致使其服务水平下降，影响用户的服务评分。综上所述，案例探究得出的结论与选址推荐系统预测值基本吻合。
 
