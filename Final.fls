@@ -156,6 +156,8 @@ INPUT d:/texlive/2018/texmf-dist/tex/latex/makecell/makecell.sty
 INPUT d:/texlive/2018/texmf-dist/tex/latex/makecell/makecell.sty
 INPUT d:/texlive/2018/texmf-dist/tex/latex/tools/array.sty
 INPUT d:/texlive/2018/texmf-dist/tex/latex/tools/array.sty
+INPUT d:/texlive/2018/texmf-dist/tex/latex/booktabs/booktabs.sty
+INPUT d:/texlive/2018/texmf-dist/tex/latex/booktabs/booktabs.sty
 INPUT Final.aux
 INPUT Final.aux
 OUTPUT Final.aux

@@ -8,17 +8,66 @@ Caruana, R.: Multitask learning. Machine Learning  28(1),  41--75 (1997)
 \bibitem{Caruana2012A}
 Caruana, R.: A dozen tricks with multitask learning  (2012)
 
+\bibitem{celikoglu2016extension}
+Celikoglu, H.B., Silgu, M.A.: Extension of traffic flow pattern dynamic
+  classification by a macroscopic model using multivariate clustering.
+  Transportation Science  50(3),  966--981 (2016)
+
+\bibitem{chen2017mining}
+Chen, T.Y., Chen, L.C., Chen, Y.M.: Mining location-based service data for
+  feature construction in retail store recommendation. In: Industrial
+  Conference on Data Mining. pp. 68--77. Springer (2017)
+
+\bibitem{feng2015personalized}
+Feng, S., Li, X., Zeng, Y., Cong, G., Chee, Y.M., Yuan, Q.: Personalized
+  ranking metric embedding for next new poi recommendation. In: Twenty-Fourth
+  International Joint Conference on Artificial Intelligence (2015)
+
+\bibitem{fortin2015should}
+Fortin, V., Abaza, M., Anctil, F., Turcotte, R.: Why should ensemble spread
+  match the rmse of the ensemble mean?(vol 15, pg 1708, 2014). JOURNAL OF
+  HYDROMETEOROLOGY  16(1),  484--484 (2015)
+
+\bibitem{frandsen2015automatic}
+Frandsen, P.B., Calcott, B., Mayer, C., Lanfear, R.: Automatic selection of
+  partitioning schemes for phylogenetic analyses using iterative k-means
+  clustering of site rates. BMC evolutionary biology  15(1), ~13 (2015)
+
+\bibitem{Fu2015Modeling}
+Fu, Y., Hui, X.: Modeling of geographic dependencies for real estate ranking on
+  site selection. In: IEEE International Conference on Data Mining Workshop
+  (2015)
+
+\bibitem{Golovin2017Google}
+Golovin, D., Solnik, B., Moitra, S., Kochanski, G., Sculley, D.: Google vizier:
+  A service for black-box optimization. In: Acm Sigkdd International Conference
+  on Knowledge Discovery and Data Mining (2017)
+
+\bibitem{Gong2014Efficient}
+Gong, P., Zhou, J., Wei, F., Ye, J.: Efficient multi-task feature learning with
+  calibration. In: Acm Sigkdd International Conference on Knowledge Discovery
+  and Data Mining (2014)
+
 \bibitem{Held2017Analyzing}
 Held, M., Rabe, A., Senf, C., Linden, S.V.D., Hostert, P.: Analyzing
   hyperspectral and hypertemporal data by decoupling feature redundancy and
   feature relevance. IEEE Geoscience and Remote Sensing Letters  12(5),
   983--987 (2017)
 
+\bibitem{ioffe2015batch}
+Ioffe, S., Szegedy, C.: Batch normalization: Accelerating deep network training
+  by reducing internal covariate shift. arXiv preprint arXiv:1502.03167  (2015)
+
 \bibitem{Jing2016Where}
 Jing, L., Guo, B., Zhu, W., Li, M., Yu, Z.: Where to place the next outlet?
   harnessing cross-space urban data for multi-scale chain store recommendation.
   In: Acm International Joint Conference on Pervasive and Ubiquitous Computing:
   Adjunct (2016)
+
+\bibitem{jou2016deep}
+Jou, B., Chang, S.F.: Deep cross residual learning for multitask visual
+  recognition. In: Proceedings of the 24th ACM international conference on
+  Multimedia. pp. 998--1007. ACM (2016)
 
 \bibitem{Long2017Learning}
 Long, M., Cao, Z., Wang, J., Yu, P.S.: Learning multiple tasks with multilinear
@@ -30,9 +79,18 @@ Mariani, M., Baggio, R., Fuchs, M., H{\"o}epken, W.: Business intelligence and
   International Journal of Contemporary Hospitality Management  30(12),
   3514--3554 (2018)
 
+\bibitem{misra2016cross}
+Misra, I., Shrivastava, A., Gupta, A., Hebert, M.: Cross-stitch networks for
+  multi-task learning. In: Proceedings of the IEEE Conference on Computer
+  Vision and Pattern Recognition. pp. 3994--4003 (2016)
+
 \bibitem{Niu2016Exploiting}
 Niu, H., Liu, J., Fu, Y., Liu, Y., Bo, L.: Exploiting Human Mobility Patterns
   for Gas Station Site Selection (2016)
+
+\bibitem{schober2018correlation}
+Schober, P., Boer, C., Schwarte, L.A.: Correlation coefficients: appropriate
+  use and interpretation. Anesthesia \& Analgesia  126(5),  1763--1768 (2018)
 
 \bibitem{wang2016place}
 Wang, F., Chen, L., Pan, W.: Where to place your next restaurant?: Optimal
@@ -50,6 +108,11 @@ Xu, M., Wang, T., Wu, Z., Zhou, J., Li, J., Wu, H.: Demand driven store site
   selection via multiple spatial-temporal data. In: Proceedings of the 24th ACM
   SIGSPATIAL International Conference on Advances in Geographic Information
   Systems. p.~40. ACM (2016)
+
+\bibitem{yin2016adapting}
+Yin, H., Zhou, X., Cui, B., Wang, H., Zheng, K., Nguyen, Q.V.H.: Adapting to
+  user interest drift for poi recommendation. IEEE Transactions on Knowledge
+  and Data Engineering  28(10),  2566--2581 (2016)
 
 \bibitem{zhao2017mining}
 Zhao, S., King, I., Lyu, M.R., Zeng, J., Yuan, M.: Mining business
@@ -70,6 +133,11 @@ Zheng, Y., Capra, L., Wolfson, O., Yang, H.: Urban computing: concepts,
 周晓东, 刘娜, 蔡文: 基于 qfd 的商业银行网点选址应用研究.
   经营管理者  4,  2--3 (2015)
 
+\bibitem{xia2018dazhongdianping}
+夏令军, 刘艳芳, 刘国炜:
+  中国地级城市餐饮业分布格局及影响因素——基于
+  “大众点评网” 数据的实证研究. 经济地理 (5), ~17 (2018)
+
 \bibitem{chainDev}
 安芸睿, et~al.: 中国城市中外国连锁店的发展探析. 山西建筑
   (2018 年 20),  23--25 (2018)
@@ -78,6 +146,11 @@ Zheng, Y., Capra, L., Wolfson, O., Yang, H.: Urban computing: concepts,
 屈弘扬, 於志文, 田苗, 郭斌: 基于 lbsn
   的商业选址推荐系统的研究与实现. 计算机科学  42(9),
   33--36 (2015)
+
+\bibitem{li2018ziranduanlie}
+李鹏, 王英杰, 虞虎, 武文波, 马楠: 基于 gis
+  格网化分析支撑的旅游空间规划技术方法研究——以青岛市为例.
+  自然资源学报  33(5),  813--827 (2018)
 
 \bibitem{IEfeatures}
 毕璋:
@@ -89,9 +162,19 @@ Zheng, Y., Capra, L., Wolfson, O., Yang, H.: Urban computing: concepts,
   基于签到数据的城市商业空间空心化识别研究——以北京市城六区为例.
   城市发展研究  25(2) (2018)
 
+\bibitem{wang2015shangyefenji}
+王芳, 高晓路, 许泽宁:
+  基于街区尺度的城市商业区识别与分类及其空间分布格局——以北京为例.
+  地理研究  34(6),  1125--1134 (2015)
+
 \bibitem{DongHongAn}
 董鸿安, 丁镭, 林远贵: 基于sems的本土咖啡连锁店
   体验营销策略研究. 商业经济 (4),  79--82 (2018)
+
+\bibitem{cai2017didi}
+蔡宁, 贺锦江, 王节祥: “互联网+”
+  背景下的制度压力与企业创业战略选择——基于滴滴出行平台的案例研究.
+  中国工业经济 (3),  174--192 (2017)
 
 \bibitem{mallLevel}
 薛冰, 肖骁, 李京忠, 姜璐, 谢潇:
@@ -113,5 +196,10 @@ Zheng, Y., Capra, L., Wolfson, O., Yang, H.: Urban computing: concepts,
 \bibitem{traffic}
 高忠文, 牛孜飏: 基于大数据的交通流量模式分析.
   哈尔滨理工大学学报  23(06),  124--127 (2018)
+
+\bibitem{huang2018beijingtraffic}
+黄洁, 王姣娥, 靳海涛, et~al.:
+  北京市地铁客流的时空分布格局及特征——基于智能交通卡数据.
+  地理科学进展  37(3),  397--406 (2018)
 
 \end{thebibliography}
