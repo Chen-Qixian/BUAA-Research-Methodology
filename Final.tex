@@ -191,15 +191,26 @@ $$RMSE\;=\;\sqrt{\frac{{\displaystyle\sum_{i=1}^k}{\displaystyle\sum_{k=1}^K}\le
 	\centering
 	\caption{实验方法列表}
 	\label{tb:exp-method}
-	\begin{tabular}{|c|l|}
+	\begin{tabular}{p{2.5cm}<{\centering}|p{9.2cm}}
 		\hline
-		方法名称                               & \multicolumn{1}{c|}{方法描述}                                                                                      \\ \hline
-		RF                                 & \begin{tabular}[c]{@{}l@{}}随机森林(Random Forest)是一种\\ 利用多棵树对样本进行训练和预测的一种分类器，\\ 实验中选择的随机森林的树的数量为60棵。\end{tabular} \\ \hline
-		\multicolumn{1}{|l|}{Cross-Stitch} & \begin{tabular}[c]{@{}l@{}}一种通过Cross-stitch单元\\ 来共享两个任务之间信息的\\ 深度多任务学习方法~\cite{misra2016cross}。\end{tabular}                         \\ \hline
-		DT                                 & \begin{tabular}[c]{@{}l@{}}决策树(Decision Tree)是一种常用的\\ 树形结构分类方法\\ 在实验中约定树的最大深度为2。\end{tabular}                  \\ \hline
-		KNN-unif                           & \begin{tabular}[c]{@{}l@{}}这种方法通过联合权重\\ 训练一个回归模型\\ 在实验中为KNN网络使用6个最近邻的邻居节点。\end{tabular}                        \\ \hline
+		方法名称                               & \multicolumn{1}{c}{方法描述}                                                                                      \\ \hline
+		RF                                 & \begin{tabular}[c]{@{}l@{}}随机森林(Random Forest)是一种利用多棵树对样本进行训练和\\预测的一种分类器， 实验中选择的随机森林的树的数量为60\\棵~\cite{Paul2018Improved}。\end{tabular} \\ \hline
+		DT                                 & \begin{tabular}[c]{@{}l@{}}决策树(Decision Tree)是一种常用的树形结构分类方法在实验中\\约定树的最大深度为2~\cite{Siu2018Automatic}。\end{tabular}                  \\ \hline
+		KNN\_unif                           & \begin{tabular}[c]{@{}l@{}}这种方法通过联合权重训练一个回归模型在实验中为KNN网络\\使用6个最近邻的邻居节点~\cite{guo2003knn}。\end{tabular}                        \\ \hline
+		GBR                                & \begin{tabular}[c]{@{}l@{}}梯度加速回归算法(Grdient Boosted Regression)设置50棵回归\\树，每棵树的深度为2~\cite{Tyree2011Parallel}。\end{tabular}                        \\ \hline
+		LASSO                           & \begin{tabular}[c]{@{}l@{}}这是一种单任务学习方法每个任务之间彼此独立采用L1范数 正则\\化进行计算~\cite{Park2008The}。\end{tabular}                        \\ \hline
+		Adaboost                           & \begin{tabular}[c]{@{}l@{}}这是一种适应性加速算法，实验中配置一棵“弱学习树” 并设置集\\成学习周期为50~\cite{Li2008AdaBoost}。\end{tabular}                        \\ \hline
+		SVR\_rbf                           & \begin{tabular}[c]{@{}l@{}}一种基于支持向量机的回归算法，该方法使用 径向基函数 内核，并\\设置$\gamma = 0.01$~\cite{Liu2018An}。\end{tabular}                        \\ \hline
+		ANN                           & \begin{tabular}[c]{@{}l@{}}一种简单的单层隐藏层的神经网络。 \end{tabular}                        \\ \hline \hline
+		Calibration                   & \begin{tabular}[c]{@{}l@{}}标准化多任务学习方法(Calibration)加入了一种基于典型的多任\\务学习的标准正则化矩阵~\cite{Hirata2018Shear}。\end{tabular}                        \\ \hline
+		Shared-Bottom                 & \begin{tabular}[c]{@{}l@{}}一种使用共享隐藏层的深度多任务学习方法。\end{tabular}\\ \hline
+		L2-Constrained                & \begin{tabular}[c]{@{}l@{}}一种使用l2距离进行共享层正则化的深度多任务学习方法~\cite{Vilbe2007Constrained}。\end{tabular}                        \\ \hline
+		Cross-Stitch                       & \begin{tabular}[c]{@{}l@{}}一种通过Cross-stitch单元来共享两个任务之间信息的 深度多任\\务学习方法~\cite{misra2016cross}。\end{tabular} \\ \hline
 	\end{tabular}
 \end{table}
+
+
+
 
 \subsection{实验结果分析}
 表\ref{tb:RMSEcanyin}和表\ref{tb:RMSEfushi}的实验结果，分别展现了采用关联特征的深度多任务学习模型（Deep Multi-task Learning framework with Relational Attention, DMLRA），和其他传统模型，在餐饮和服饰两个数据集上的预测结果的RMSE指标。
@@ -208,11 +219,20 @@ $$RMSE\;=\;\sqrt{\frac{{\displaystyle\sum_{i=1}^k}{\displaystyle\sum_{k=1}^K}\le
 	\centering
 	\caption{基于餐饮连锁店数据集的各种预测方法的RMSE指标}
 	\label{tb:RMSEcanyin}
-	\begin{tabular}{p{2cm}<{\centering}p{2cm}<{\centering}p{2cm}<{\centering}p{2cm}<{\centering}p{2cm}<{\centering}p{2cm}<{\centering}}
+	\begin{tabular}{p{3cm}<{\centering}p{1.6cm}<{\centering}p{1.6cm}<{\centering}p{1.6cm}<{\centering}p{1.6cm}<{\centering}p{1.6cm}<{\centering}}
 		\hline
 		& \textbf{y1} & \textbf{y2} & \textbf{y3} & \textbf{y4} & \textbf{y4} \\ \hline
 		RF & 1156.625 & 3.921 & 0.518 & 0.521 & 0.567 \\ %\hline
 		DT & 1278.090 & 4.109 & 0.543 & 0.581 & 0.604 \\ %\hline
+		KNN\_unif & 1364.145 & 4.401 & 0.594 & 0.597 & 0.620 \\ %\hline
+		GBR & 1317.825 & 4.272 & 0.571 & 0.601 & 0.608 \\ %\hline
+		LASSO & 1171.059 & 3.922 & 0.595 & 0.625 & 0.646 \\ %\hline
+		Adaboost & 1404.083 & 4.198 & 0.575 & 0.598 & 0.600 \\ %\hline
+		SVR\_rbf & 1203.038 & 4.337 & 0.573 & 0.565 & 0.603 \\ %\hline
+		ANN & 1014.505 & 3.784 & 0.501 & 0.560 & 0.547 \\ \hline
+		Calibration & 1226.450 & 3.767 & 0.499 & 0.502 & 0.544 \\ %\hline
+		Shared-Bottom & 1065.990 & 3.932 & 0.546 & 0.544 & 0.589 \\ %\hline
+		L2-Constrained & 958.086 & 3.829 & 0.572 & 0.538 & 0.565 \\ %\hline
 		Cross-Stitch & 1068.238 & 3.744 & 0.533 & 0.494 & 0.540 \\ \hline
 		\textbf{DMLRA} & \textbf{933.406} & \textbf{3.611} & \textbf{0.488} & \textbf{0.479} & \textbf{0.536}                 \\ \hline
 	\end{tabular}
@@ -224,11 +244,20 @@ $$RMSE\;=\;\sqrt{\frac{{\displaystyle\sum_{i=1}^k}{\displaystyle\sum_{k=1}^K}\le
 	\centering
 	\caption{基于服饰连锁品牌数据集的各种预测方法的RMSE指标}
 	\label{tb:RMSEfushi}
-	\begin{tabular}{p{2cm}<{\centering}p{2cm}<{\centering}p{2cm}<{\centering}p{2cm}<{\centering}p{2cm}<{\centering}p{2cm}<{\centering}}
+	\begin{tabular}{p{3cm}<{\centering}p{1.6cm}<{\centering}p{1.6cm}<{\centering}p{1.6cm}<{\centering}p{1.6cm}<{\centering}p{1.6cm}<{\centering}}
 		\hline
 		& \textbf{y1} & \textbf{y2} & \textbf{y3} & \textbf{y4} & \textbf{y4} \\ \hline
 		RF & 33.555 & 3.149 & 0.439 & 0.439 & 0.459 \\ %\hline
 		DT & 53.900 & 3.319 & 0.475 & 0.477 & 0.468 \\ %\hline
+		KNN\_unif & 1364.145 & 4.401 & 0.594 & 0.597 & 0.620 \\ %\hline
+		GBR & 1317.825 & 4.272 & 0.571 & 0.601 & 0.608 \\ %\hline
+		LASSO & 1171.059 & 3.922 & 0.595 & 0.625 & 0.646 \\ %\hline
+		Adaboost & 1404.083 & 4.198 & 0.575 & 0.598 & 0.600 \\ %\hline
+		SVR\_rbf & 1203.038 & 4.337 & 0.573 & 0.565 & 0.603 \\ %\hline
+		ANN & 1014.505 & 3.784 & 0.501 & 0.560 & 0.547 \\ \hline
+		Calibration & 1226.450 & 3.767 & 0.499 & 0.502 & 0.544 \\ %\hline
+		Shared-Bottom & 1065.990 & 3.932 & 0.546 & 0.544 & 0.589 \\ %\hline
+		L2-Constrained & 958.086 & 3.829 & 0.572 & 0.538 & 0.565 \\ %\hline
 		Cross-Stitch & 29.845 & 2.818 & 0.399 & 0.404 & 0.416 \\ \hline
 		\textbf{DMLRA} & \textbf{23.287} & \textbf{2.668} & \textbf{0.361} & \textbf{0.386} & \textbf{0.397}                 \\ \hline
 	\end{tabular}

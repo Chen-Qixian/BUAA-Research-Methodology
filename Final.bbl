@@ -48,11 +48,20 @@ Gong, P., Zhou, J., Wei, F., Ye, J.: Efficient multi-task feature learning with
   calibration. In: Acm Sigkdd International Conference on Knowledge Discovery
   and Data Mining (2014)
 
+\bibitem{guo2003knn}
+Guo, G., Wang, H., Bell, D., Bi, Y., Greer, K.: Knn model-based approach in
+  classification. In: OTM Confederated International Conferences" On the Move
+  to Meaningful Internet Systems". pp. 986--996. Springer (2003)
+
 \bibitem{Held2017Analyzing}
 Held, M., Rabe, A., Senf, C., Linden, S.V.D., Hostert, P.: Analyzing
   hyperspectral and hypertemporal data by decoupling feature redundancy and
   feature relevance. IEEE Geoscience and Remote Sensing Letters  12(5),
   983--987 (2017)
+
+\bibitem{Hirata2018Shear}
+Hirata, C., Seljak, U.: Shear calibration biases in weak-lensing surveys.
+  Monthly Notices of the Royal Astronomical Society  343(2),  459--480 (2018)
 
 \bibitem{ioffe2015batch}
 Ioffe, S., Szegedy, C.: Batch normalization: Accelerating deep network training
@@ -68,6 +77,15 @@ Jing, L., Guo, B., Zhu, W., Li, M., Yu, Z.: Where to place the next outlet?
 Jou, B., Chang, S.F.: Deep cross residual learning for multitask visual
   recognition. In: Proceedings of the 24th ACM international conference on
   Multimedia. pp. 998--1007. ACM (2016)
+
+\bibitem{Li2008AdaBoost}
+Li, X., Wang, L., Sung, E.: Adaboost with svm-based component classifiers.
+  Engineering Applications of Artificial Intelligence  21(5),  785--795 (2008)
+
+\bibitem{Liu2018An}
+Liu, L., Lei, Y.: An accurate ecological footprint analysis and prediction for
+  beijing based on svm model. Ecological Informatics  44,  S1574954117302972
+  (2018)
 
 \bibitem{Long2017Learning}
 Long, M., Cao, Z., Wang, J., Yu, P.S.: Learning multiple tasks with multilinear
@@ -88,9 +106,30 @@ Misra, I., Shrivastava, A., Gupta, A., Hebert, M.: Cross-stitch networks for
 Niu, H., Liu, J., Fu, Y., Liu, Y., Bo, L.: Exploiting Human Mobility Patterns
   for Gas Station Site Selection (2016)
 
+\bibitem{Park2008The}
+Park, T., Casella, G.: The bayesian lasso. Publications of the American
+  Statistical Association  103(482),  681--686 (2008)
+
+\bibitem{Paul2018Improved}
+Paul, A., Mukherjee, D.P., Das, P., Gangopadhyay, A., Chintha, A.R., Kundu, S.:
+  Improved random forest for classification. IEEE Transactions on Image
+  Processing  27(8),  4012--4024 (2018)
+
 \bibitem{schober2018correlation}
 Schober, P., Boer, C., Schwarte, L.A.: Correlation coefficients: appropriate
   use and interpretation. Anesthesia \& Analgesia  126(5),  1763--1768 (2018)
+
+\bibitem{Siu2018Automatic}
+Siu, C.: Automatic induction of neural network decision tree algorithms  (2018)
+
+\bibitem{Tyree2011Parallel}
+Tyree, S., Weinberger, K.Q., Agrawal, K., Paykin, J.: Parallel boosted
+  regression trees for web search ranking. In: International Conference on
+  World Wide Web (2011)
+
+\bibitem{Vilbe2007Constrained}
+Vilbe, P., Calvez, L.C.: Constrained l2 suboptimal model reduction. Electronics
+  Letters  23(25),  1340--1342 (2007)
 
 \bibitem{wang2016place}
 Wang, F., Chen, L., Pan, W.: Where to place your next restaurant?: Optimal

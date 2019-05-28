@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2019.3.24)  27 MAY 2019 23:24
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2019.3.24)  29 MAY 2019 00:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1467,24 +1467,14 @@ File: figures/multiLearn.png Graphic file (type bmp)
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `htbp') on input line 190.
 
-
-Overfull \hbox (11.1094pt too wide) in paragraph at lines 211--219
- [][] 
- []
-
-
-Overfull \hbox (11.1094pt too wide) in paragraph at lines 227--235
- [][] 
- []
-
-[9] (./Final.bbl [10] [11] [12]) [13] (./Final.aux) ) 
+[9] [10] (./Final.bbl [11] [12] [13] [14]) [15] (./Final.aux) ) 
 Here is how much of TeX's memory you used:
- 16953 strings out of 494895
- 379245 string characters out of 6176372
- 447179 words of memory out of 5000000
- 20600 multiletter control sequences out of 15000+600000
+ 16962 strings out of 494895
+ 379391 string characters out of 6176372
+ 457215 words of memory out of 5000000
+ 20609 multiletter control sequences out of 15000+600000
  536575 words of font info for 79 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 53i,14n,68p,10432b,313s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 53i,17n,68p,10432b,365s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Final.xdv (13 pages, 193568 bytes).
+Output written on Final.xdv (15 pages, 222452 bytes).
