@@ -179,6 +179,7 @@ INPUT d:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT d:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 OUTPUT Final.xdv
 INPUT figures/intro.png
+INPUT figures/model.png
 INPUT d:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm
 INPUT d:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
 INPUT d:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm
